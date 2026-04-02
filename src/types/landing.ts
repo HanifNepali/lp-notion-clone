@@ -1,7 +1,12 @@
+export interface DropdownItem {
+  label: string;
+  href: string;
+}
+
 export interface NavLink {
   label: string;
   href: string;
-  hasDropdown?: boolean;
+  dropdownItems?: DropdownItem[];
 }
 
 export interface CtaLink {
