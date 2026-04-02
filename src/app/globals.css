@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colors — pulled from Figma (Notion homepage) */
+  --color-ink: #121212;
+  --color-ink-soft: #050505;
+  --color-white: #ffffff;
+  --color-surface: #f7f7f5;
+  --color-border: rgba(0, 0, 0, 0.1);
+
+  /* Font family — set via next/font in layout.tsx, exposed here as a variable */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Type scale (desktop, from Figma) — refined per-component as we build */
+  --text-hero: 76.5px;
+  --text-hero--line-height: 78px;
+  --text-hero--letter-spacing: -2.5628px;
+
+  --text-h2: 24px;
+  --text-h2--line-height: 30px;
+  --text-h2--letter-spacing: -0.42px;
+
+  --text-nav: 15px;
+  --text-nav--line-height: 31px;
+
+  --text-button: 16px;
+  --text-button--line-height: 23px;
+
+  /* Radius */
+  --radius-button: 5px;
+
+  /* Container */
+  --breakpoint-3xl: 1440px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-white);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  /* Respect reduced motion globally */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-306 px-4 sm:px-6 lg:px-8;
+  }
 }
