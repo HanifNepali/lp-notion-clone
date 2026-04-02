@@ -14,3 +14,18 @@ export interface CtaLink {
   href: string;
   showArrow?: boolean;
 }
+
+export interface HeroSegment {
+  type: "text" | "keyword";
+  value: string;
+  icon?: string;
+  alt?: string;
+}
+
+export interface HeroContent {
+  segmentTop: HeroSegment[];
+  segmentBottom: HeroSegment[];
+  subheading: string;
+  cta: CtaLink;
+  image: { src: string; alt: string; width: number; height: number };
+}

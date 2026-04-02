@@ -1,4 +1,4 @@
-import type { NavLink, CtaLink } from "@/types/landing";
+import type { NavLink, CtaLink, HeroContent } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
   {
@@ -54,4 +54,31 @@ export const headerActions: {
   requestDemo: { label: "Request a demo", href: "#" },
   login: { label: "Log in", href: "#" },
   primaryCta: { label: "Get Notion free", href: "/landing" },
+};
+
+export const heroContent: HeroContent = {
+  segmentTop: [
+    { type: "text", value: "Your" },
+    { type: "keyword", value: "wiki,", icon: "/icons/wiki-icon.png", alt: "" },
+    { type: "keyword", value: "docs,", icon: "/icons/docs-icon.png", alt: "" },
+  ],
+  segmentBottom: [
+    { type: "text", value: "&" },
+    {
+      type: "keyword",
+      value: "projects.",
+      icon: "/icons/projects-icon.png",
+      alt: "",
+    },
+    { type: "text", value: "Together." },
+  ],
+  subheading:
+    "Notion is the connected workspace where better, faster work happens. Now with AI",
+  cta: { label: "Get Notion free", href: "/signup" },
+  image: {
+    src: "/images/home-hero.png",
+    alt: "Notion workspace showing a wiki, docs, and project board",
+    width: 852,
+    height: 260,
+  },
 };
