@@ -73,3 +73,16 @@ export interface WorkspaceShowcaseContent {
   heading: string;
   blocks: FeatureBlock[];
 }
+
+export interface ConsolidateToolsContent {
+  toolsRow: ImageAsset;
+  strikethrough: ImageAsset;
+  pencilIllustration: ImageAsset;
+}
+
+export interface TestimonialContent {
+  quote: string;
+  author: string;
+  role: string;
+  logo: ImageAsset;
+}

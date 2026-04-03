@@ -11,6 +11,7 @@
 
   /* Font family — set via next/font in layout.tsx, exposed here as a variable */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
 
   /* Type scale (desktop, from Figma) — refined per-component as we build */
   --text-hero: 76.5px;
@@ -26,6 +27,11 @@
 
   --text-button: 16px;
   --text-button--line-height: 23px;
+  --text-quote: 29px;
+  --text-quote--line-height: 34px;
+
+  --text-caption: 13.5px;
+  --text-caption--line-height: 19px;
 
   /* Radius */
   --radius-button: 5px;

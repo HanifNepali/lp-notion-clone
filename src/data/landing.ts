@@ -5,6 +5,8 @@ import type {
   SidekickContent,
   CustomerWallContent,
   WorkspaceShowcaseContent,
+  ConsolidateToolsContent,
+  TestimonialContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -261,4 +263,38 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
       },
     },
   ],
+};
+
+export const consolidateToolsContent: ConsolidateToolsContent = {
+  toolsRow: {
+    src: "/images/tools-before-notion.png",
+    alt: "A row of separate tool logos teams typically juggle before switching to Notion",
+    width: 568,
+    height: 78,
+  },
+  strikethrough: {
+    src: "/images/tools-strikethrough.png",
+    alt: "",
+    width: 613,
+    height: 50,
+  },
+  pencilIllustration: {
+    src: "/images/giant-pencil-illustration.png",
+    alt: "",
+    width: 217,
+    height: 183,
+  },
+};
+
+export const metalabTestimonial: TestimonialContent = {
+  quote:
+    "We got rid of nearly a dozen different tools because of what Notion does for us.",
+  author: "Justin Watt",
+  role: "Director of Ops & Marketing, MetaLab",
+  logo: {
+    src: "/images/logos/metalab.png",
+    alt: "MetaLab",
+    width: 127,
+    height: 35,
+  },
 };
