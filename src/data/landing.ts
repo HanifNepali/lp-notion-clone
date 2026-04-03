@@ -4,6 +4,7 @@ import type {
   HeroContent,
   SidekickContent,
   CustomerWallContent,
+  WorkspaceShowcaseContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -163,6 +164,101 @@ export const customerWallContent: CustomerWallContent = {
       src: "/images/logos/angel-list.png",
       width: 104,
       height: 24,
+    },
+  ],
+};
+
+export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
+  heading: "Finally, all your work in one place",
+  blocks: [
+    {
+      id: "wikis",
+      icon: "/icons/feature-wikis.svg",
+      title: "Wikis",
+      description:
+        "It's hard to move fast if you can't find anything. Centralize all your knowledge in Notion.",
+      accentColor: "#ea4e43",
+      exploreHref: "#",
+      screenshot: {
+        src: "/images/engineering-wiki.png",
+        alt: "An engineering wiki page in Notion",
+        width: 958,
+        height: 599,
+      },
+      illustration: {
+        src: "/images/wiki-illo.png",
+        alt: "",
+        width: 222,
+        height: 359,
+      },
+      doodle: "/icons/doodle-wikis.svg",
+      doodlePositionTop: "top-16",
+    },
+    {
+      id: "docs",
+      icon: "/icons/feature-docs.svg",
+      title: "Docs",
+      description:
+        "Simple. Powerful. Beautiful. Communicate more efficiently with next generation docs.",
+      accentColor: "#996600",
+      exploreHref: "#",
+      screenshot: {
+        src: "/images/meeting-notes.png",
+        alt: "A meeting notes document in Notion",
+        width: 958,
+        height: 599,
+      },
+      illustration: {
+        src: "/images/docs-illo.png",
+        alt: "",
+        width: 222,
+        height: 359,
+      },
+      doodle: "/icons/doodle-docs.svg",
+      doodlePositionTop: "top-73",
+    },
+    {
+      id: "projects",
+      icon: "/icons/feature-projects.svg",
+      title: "Projects",
+      description:
+        "Manage any type of project more efficiently. No separate, clunky system.",
+      accentColor: "#0a85d1",
+      exploreHref: "#",
+      screenshot: {
+        src: "/images/projects-board.png",
+        alt: "A project board in Notion",
+        width: 958,
+        height: 599,
+      },
+      illustration: {
+        src: "/images/projects-illo.png",
+        alt: "",
+        width: 222,
+        height: 359,
+      },
+      doodle: "/icons/doodle-projects.svg",
+      doodlePositionTop: "top-79",
+    },
+    {
+      id: "notion-ai",
+      icon: "/icons/ai-sparkle.svg",
+      title: "Notion AI",
+      description: "Access the limitless power of AI, right inside Notion.",
+      accentColor: "#9d34da",
+      exploreHref: "#",
+      screenshot: {
+        src: "/images/notion-ai.png",
+        alt: "Notion AI assisting inside a Notion page",
+        width: 958,
+        height: 599,
+      },
+      illustration: {
+        src: "/images/ai-illo.png",
+        alt: "",
+        width: 222,
+        height: 359,
+      },
     },
   ],
 };

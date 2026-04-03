@@ -98,7 +98,7 @@ export function Hero() {
             width={24}
             height={23}
             aria-hidden="true"
-            className="inline-block align-middle ml-2"
+            className="inline-block align-middle ml-2 h-6 w-6"
           />
         </p>
 

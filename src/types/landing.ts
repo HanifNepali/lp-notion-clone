@@ -55,3 +55,21 @@ export interface CustomerWallContent {
   cta: CtaLink;
   logos: CustomerLogo[];
 }
+
+export interface FeatureBlock {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  accentColor: string;
+  exploreHref: string;
+  screenshot: ImageAsset;
+  illustration: ImageAsset;
+  doodle?: string;
+  doodlePositionTop?: string;
+}
+
+export interface WorkspaceShowcaseContent {
+  heading: string;
+  blocks: FeatureBlock[];
+}
