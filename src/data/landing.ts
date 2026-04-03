@@ -8,6 +8,7 @@ import type {
   ConsolidateToolsContent,
   TestimonialContent,
   BuildingBlocksContent,
+  TeamShowcaseContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -377,4 +378,93 @@ export const matchgroupTestimonial: TestimonialContent = {
     width: 33,
     height: 36,
   },
+};
+
+const productRoadmapScreenshot = {
+  src: "/images/team-product-page.png",
+  alt: "A product roadmap page in Notion with a sidebar showing team spaces",
+  width: 958,
+  height: 640,
+};
+
+export const teamShowcaseContent: TeamShowcaseContent = {
+  heading: "Every team, side-by-side",
+  defaultIndex: 2,
+  teams: [
+    {
+      label: "Engineering",
+      icon: {
+        src: "/icons/team-engineering.svg",
+        alt: "",
+        width: 70,
+        height: 70,
+      },
+      screenshot: {
+        src: "/images/view-board.png",
+        alt: "Timeline view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "Design",
+      icon: { src: "/icons/team-design.svg", alt: "", width: 70, height: 70 },
+      screenshot: {
+        src: "/images/meeting-notes.png",
+        alt: "Timeline view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "Product",
+      icon: { src: "/icons/team-product.svg", alt: "", width: 70, height: 70 },
+      screenshot: {
+        src: "/images/team-product-page.png",
+        alt: "Kanban board view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "Marketing",
+      icon: {
+        src: "/icons/team-marketing.svg",
+        alt: "",
+        width: 70,
+        height: 70,
+      },
+      screenshot: {
+        src: "/images/engineering-wiki.png",
+        alt: "Table view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "Operations",
+      icon: {
+        src: "/icons/team-operations.svg",
+        alt: "",
+        width: 70,
+        height: 70,
+      },
+      screenshot: {
+        src: "/images/team-product-page.png",
+        alt: "Timeline view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "HR",
+      icon: { src: "/icons/team-hr.svg", alt: "", width: 70, height: 70 },
+      screenshot: {
+        src: "/images/meeting-notes.png",
+        alt: "Timeline view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+  ],
 };

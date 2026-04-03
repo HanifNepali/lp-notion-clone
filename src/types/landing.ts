@@ -99,3 +99,13 @@ export interface BuildingBlocksContent {
   featureDescription: string;
   tabs: ViewTab[];
 }
+
+export interface TeamTab extends ViewTab {
+  icon: ImageAsset;
+}
+
+export interface TeamShowcaseContent {
+  heading: string;
+  defaultIndex: number;
+  teams: TeamTab[];
+}

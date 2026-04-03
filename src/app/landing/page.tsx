@@ -3,6 +3,7 @@ import { ConsolidateTools } from "@/components/landing/consolidate-tools";
 import { CustomerWall } from "@/components/landing/customer-wall";
 import { Hero } from "@/components/landing/hero";
 import { SidekickShowcase } from "@/components/landing/sidekick-showcase";
+import { TeamShowcase } from "@/components/landing/team-showcase";
 import { WorkspaceShowcase } from "@/components/landing/workspace-showcase";
 
 export default function LandingPage() {
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <WorkspaceShowcase />
       <ConsolidateTools />
       <BuildingBlocks />
+      <TeamShowcase />
     </main>
   );
 }
