@@ -29,3 +29,29 @@ export interface HeroContent {
   cta: CtaLink;
   image: { src: string; alt: string; width: number; height: number };
 }
+
+export interface ImageAsset {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+export interface SidekickContent {
+  desktopImage: ImageAsset;
+  mobileImage: ImageAsset;
+}
+
+export interface CustomerLogo {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+}
+
+export interface CustomerWallContent {
+  heading: string;
+  description: string;
+  cta: CtaLink;
+  logos: CustomerLogo[];
+}

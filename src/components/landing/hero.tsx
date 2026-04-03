@@ -24,7 +24,7 @@ const KeywordUnderline = () => {
 
 export function Hero() {
   return (
-    <section className="pt-12 pb-16 lg:pt-22 lg:pb-20">
+    <section className="pt-12 lg:pt-22">
       <Container
         variant="page"
         className="flex flex-col items-center text-center"
