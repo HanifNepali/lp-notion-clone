@@ -5,7 +5,7 @@
   --color-ink: #121212;
   --color-ink-soft: #050505;
   --color-white: #ffffff;
-  --color-surface: #f7f7f5;
+  --color-surface: #f6f5f4;
   --color-border: rgba(0, 0, 0, 0.1);
   --color-accent: #0a85d1;
 
@@ -66,7 +66,7 @@
 
 @layer utilities {
   .container-page {
-    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-306;
+    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-322;
   }
   .container-xl {
     @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-360;

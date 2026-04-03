@@ -1,3 +1,4 @@
+import { BuildingBlocks } from "@/components/landing/building-blocks";
 import { ConsolidateTools } from "@/components/landing/consolidate-tools";
 import { CustomerWall } from "@/components/landing/customer-wall";
 import { Hero } from "@/components/landing/hero";
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <CustomerWall />
       <WorkspaceShowcase />
       <ConsolidateTools />
+      <BuildingBlocks />
     </main>
   );
 }

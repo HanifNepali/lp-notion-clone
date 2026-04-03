@@ -86,3 +86,16 @@ export interface TestimonialContent {
   role: string;
   logo: ImageAsset;
 }
+
+export interface ViewTab {
+  label: string;
+  screenshot: ImageAsset;
+}
+
+export interface BuildingBlocksContent {
+  heading: string;
+  peekImage: ImageAsset;
+  featureTitle: string;
+  featureDescription: string;
+  tabs: ViewTab[];
+}

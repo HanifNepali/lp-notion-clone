@@ -27,7 +27,7 @@ function CardIcon({
   return (
     <div
       className={cn(
-        "mb-4 flex size-[26px] items-center justify-center",
+        "mb-4 flex size-6.5 items-center justify-center",
         className,
       )}
     >

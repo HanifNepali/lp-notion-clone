@@ -7,6 +7,7 @@ import type {
   WorkspaceShowcaseContent,
   ConsolidateToolsContent,
   TestimonialContent,
+  BuildingBlocksContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -188,7 +189,7 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
         height: 599,
       },
       illustration: {
-        src: "/images/wiki-illo.png",
+        src: "/images/wiki-illustration.png",
         alt: "",
         width: 222,
         height: 359,
@@ -211,7 +212,7 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
         height: 599,
       },
       illustration: {
-        src: "/images/docs-illo.png",
+        src: "/images/docs-illustration.png",
         alt: "",
         width: 222,
         height: 359,
@@ -234,7 +235,7 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
         height: 599,
       },
       illustration: {
-        src: "/images/projects-illo.png",
+        src: "/images/projects-illustration.png",
         alt: "",
         width: 222,
         height: 359,
@@ -256,7 +257,7 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
         height: 599,
       },
       illustration: {
-        src: "/images/ai-illo.png",
+        src: "/images/ai-illustration.png",
         alt: "",
         width: 222,
         height: 359,
@@ -296,5 +297,84 @@ export const metalabTestimonial: TestimonialContent = {
     alt: "MetaLab",
     width: 127,
     height: 35,
+  },
+};
+
+export const buildingBlocksContent: BuildingBlocksContent = {
+  heading: "Powerful building blocks",
+  peekImage: {
+    src: "/images/building-blocks-peek.png",
+    alt: "",
+    width: 221,
+    height: 150,
+  },
+  featureTitle: "Visualize, filter & sort any way you want",
+  featureDescription:
+    "Show only tasks assigned to you, or items marked as urgent. Break down any project in the way that's most helpful to you.",
+  tabs: [
+    {
+      label: "Board",
+      screenshot: {
+        src: "/images/view-board.png",
+        alt: "Kanban board view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "Table",
+      screenshot: {
+        src: "/images/engineering-wiki.png",
+        alt: "Table view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+    {
+      label: "Timeline",
+      screenshot: {
+        src: "/images/meeting-notes.png",
+        alt: "Timeline view in Notion",
+        width: 958,
+        height: 599,
+      },
+    },
+  ],
+};
+
+export const customizeInfoCard = {
+  title: "Customize the info you track",
+  description:
+    "Create your own labels, tags, owners, and more, so everyone has context and everything stays organized.",
+  image: {
+    src: "/images/customize-info.png",
+    alt: "Custom labels and tags in a Notion database",
+    width: 480,
+    height: 320,
+  },
+};
+
+export const buildAnyPageCard = {
+  title: "Build any page, communicate any idea",
+  description:
+    "Everything is drag and drop in Notion — images, toggles, to-do's, even embedded databases.",
+  image: {
+    src: "/images/build-any-page.png",
+    alt: "A flexible drag-and-drop Notion page layout",
+    width: 480,
+    height: 320,
+  },
+};
+
+export const matchgroupTestimonial: TestimonialContent = {
+  quote:
+    "Notion adapts to your needs. It's as minimal or as powerful as you need it to be.",
+  author: "Rahim Makani",
+  role: "Director of Product, Matchgroup",
+  logo: {
+    src: "/images/logos/match-group.png",
+    alt: "MetaLab",
+    width: 33,
+    height: 36,
   },
 };
