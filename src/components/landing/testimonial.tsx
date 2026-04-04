@@ -19,7 +19,7 @@ export function Testimonial({ content }: TestimonialProps) {
             width={content.logo.width}
             height={content.logo.height}
             style={{ height: content.logo.height }}
-            className="w-auto object-contain mb-2 sm:mb-0"
+            className="h-auto object-contain mb-2 sm:mb-0"
           />
         )}
         <div className="text-left text-(length:--text-caption) leading-(--text-caption--line-height) text-ink">

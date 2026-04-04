@@ -24,7 +24,7 @@ const KeywordUnderline = () => {
 
 export function Hero() {
   return (
-    <section className="pt-12 lg:pt-22">
+    <section className="pt-16 lg:pt-22">
       <Container
         variant="page"
         className="flex flex-col items-center text-center"
@@ -98,7 +98,7 @@ export function Hero() {
             width={24}
             height={23}
             aria-hidden="true"
-            className="inline-block align-middle ml-2 h-6 w-6"
+            className="inline-block align-middle ml-2 h-6 w-auto"
           />
         </p>
 

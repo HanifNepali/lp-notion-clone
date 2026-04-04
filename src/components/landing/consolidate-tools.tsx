@@ -6,7 +6,7 @@ import { Testimonial } from "./testimonial";
 
 export function ConsolidateTools() {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-16 lg:py-20">
       <Container variant="page" className="flex flex-col items-center">
         <div className="lg:max-w-105 lg:mr-auto lg:ml-75">
           <SectionHeading>

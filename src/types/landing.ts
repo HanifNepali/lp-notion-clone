@@ -157,3 +157,29 @@ export interface CommunityContent {
   carouselSlides: CarouselSlide[];
   tweets: Tweet[];
 }
+
+export interface TemplateItem {
+  title: string;
+  icon: ImageAsset;
+  href: string;
+}
+
+export interface FeaturedTemplateColumn {
+  heading: string;
+  items: string[];
+}
+
+export interface TemplatesContent {
+  heading: string;
+  browseAllHref: string;
+  illustration: ImageAsset;
+  items: TemplateItem[];
+}
+
+export interface GetStartedContent {
+  heading: string;
+  description: string;
+  primaryCta: CtaLink;
+  secondaryCta: CtaLink;
+  illustration: ImageAsset;
+}

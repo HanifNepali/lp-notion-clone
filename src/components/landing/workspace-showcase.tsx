@@ -5,7 +5,7 @@ import { workspaceShowcaseContent } from "@/data/landing";
 
 export function WorkspaceShowcase() {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-16 lg:py-20">
       <Container variant="page">
         <SectionHeading>
           <SectionHeading.Title size="display">
@@ -27,6 +27,7 @@ export function WorkspaceShowcase() {
                     width={31}
                     height={31}
                     aria-hidden="true"
+                    className="w-auto"
                   />
                   <h3 className="text-[26px] font-bold leading-8 tracking-[-0.6px] text-ink sm:text-[30px] sm:leading-8.5">
                     {block.title}

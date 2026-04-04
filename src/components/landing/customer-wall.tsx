@@ -6,7 +6,7 @@ import { customerWallContent } from "@/data/landing";
 
 export function CustomerWall() {
   return (
-    <section className="py-16 lg:py-20">
+    <section className="py-12 xl:py-20">
       <Container variant="page">
         <SectionHeading>
           <SectionHeading.Title size="display">

@@ -14,7 +14,7 @@ import { Eye, Palette, Shuffle } from "lucide-react";
 
 export function BuildingBlocks() {
   return (
-    <section className="py-16 lg:py-20">
+    <section className="py-16 xl:py-20">
       <Container variant="page">
         <div className="relative flex justify-center lg:justify-normal items-center">
           <Image

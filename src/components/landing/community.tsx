@@ -21,7 +21,7 @@ function highlightMentions(text: string) {
 
 export function Community() {
   return (
-    <section className="py-16 lg:py-20">
+    <section className="py-12 lg:py-16 xl:py-20">
       <Container variant="sm">
         <SectionHeading>
           <SectionHeading.Title size="display" className="whitespace-pre-line">
@@ -79,7 +79,7 @@ export function Community() {
                 alt={communityContent.supportNetwork.icon.alt}
                 width={communityContent.supportNetwork.icon.width}
                 height={communityContent.supportNetwork.icon.height}
-                className="object-cover"
+                className="object-cover w-auto"
               />
             </Card.Media>
           </Card>
@@ -100,7 +100,7 @@ export function Community() {
                 alt={communityContent.languageCard.image.alt}
                 width={communityContent.languageCard.image.width}
                 height={communityContent.languageCard.image.height}
-                className="object-cover"
+                className="object-cover w-auto"
               />
             </Card.Media>
           </Card>

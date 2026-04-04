@@ -10,6 +10,8 @@ import type {
   BuildingBlocksContent,
   TeamShowcaseContent,
   CommunityContent,
+  TemplatesContent,
+  GetStartedContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -482,18 +484,18 @@ export const communityContent: CommunityContent = {
     height: 160,
   },
   stats: [
-    { value: "1M+", label: "community members" },
-    { value: "150+", label: "community groups" },
-    { value: "50+", label: "countries represented" },
+    { value: "1M", label: "community members" },
+    { value: "150", label: "community groups" },
+    { value: "50", label: "countries represented" },
   ],
   supportNetwork: {
     title: "An always-on support network",
     description: "Swap setups and share tips in over 149 online communities.",
     icon: {
-      src: "/icons/community-icons.svg",
+      src: "/icons/community-icons.png",
       alt: "Social Networking Apps",
       width: 288,
-      height: 272,
+      height: 273,
     },
   },
   languageCard: {
@@ -504,7 +506,7 @@ export const communityContent: CommunityContent = {
       src: "/images/meetup.png",
       alt: "Variet of Languages Supported",
       width: 464,
-      height: 234,
+      height: 235,
     },
   },
   carouselSlides: [
@@ -530,7 +532,7 @@ export const communityContent: CommunityContent = {
       handle: "@mindofandre",
       avatar: {
         src: "/images/avatars/avatar-2.png",
-        alt: "",
+        alt: "Tweeter User",
         width: 40,
         height: 40,
       },
@@ -542,7 +544,7 @@ export const communityContent: CommunityContent = {
       handle: "@DebMecca",
       avatar: {
         src: "/images/avatars/avatar-1.png",
-        alt: "",
+        alt: "Tweeter User",
         width: 40,
         height: 40,
       },
@@ -554,7 +556,7 @@ export const communityContent: CommunityContent = {
       handle: "@opeyre",
       avatar: {
         src: "/images/avatars/avatar-3.png",
-        alt: "",
+        alt: "Tweeter User",
         width: 40,
         height: 40,
       },
@@ -562,4 +564,90 @@ export const communityContent: CommunityContent = {
         "@NotionHQ Truly impressed by the velocity and quality of your work. Making using Notion even more fun week after week!",
     },
   ],
+};
+
+export const templatesContent: TemplatesContent = {
+  heading: "Endless ways to use it",
+  browseAllHref: "#",
+  illustration: {
+    src: "/images/templates-illustration.png",
+    alt: "Templates section illustration, People peeking at the templates",
+    width: 207,
+    height: 202,
+  },
+  items: [
+    {
+      title: "Product roadmap",
+      icon: {
+        src: "/icons/flag.svg",
+        alt: "Flag Icon",
+        width: 26,
+        height: 26,
+      },
+      href: "#",
+    },
+    {
+      title: "OKRs",
+      icon: {
+        src: "/icons/checkmark.svg",
+        alt: "Checkmark Icon",
+        width: 26,
+        height: 26,
+      },
+      href: "#",
+    },
+    {
+      title: "Meeting notes",
+      icon: {
+        src: "/icons/clipboard.svg",
+        alt: "Clipboard Icon",
+        width: 26,
+        height: 26,
+      },
+      href: "#",
+    },
+    {
+      title: "Vacation planner",
+      icon: {
+        src: "/icons/aeroplane.svg",
+        alt: "Aeroplane Icon",
+        width: 26,
+        height: 26,
+      },
+      href: "#",
+    },
+    {
+      title: "Editorial calendar",
+      icon: {
+        src: "/icons/calendar.svg",
+        alt: "calendar Icon",
+        width: 26,
+        height: 26,
+      },
+      href: "#",
+    },
+    {
+      title: "Habit tracker",
+      icon: {
+        src: "/icons/tracker.svg",
+        alt: "Tracker Icon",
+        width: 26,
+        height: 26,
+      },
+      href: "#",
+    },
+  ],
+};
+
+export const getStartedContent: GetStartedContent = {
+  heading: "Get started for free",
+  description: "Play around with it first. Pay and add your team later.",
+  primaryCta: { label: "Try Notion free", href: "/signup" },
+  secondaryCta: { label: "Request a demo", href: "#" },
+  illustration: {
+    src: "/images/notion-parade.png",
+    alt: "Get Started section illustration, Notion Parade",
+    width: 700,
+    height: 400,
+  },
 };

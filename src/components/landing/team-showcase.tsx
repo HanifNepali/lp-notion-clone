@@ -14,7 +14,7 @@ export function TeamShowcase() {
   const activeTeam = teamShowcaseContent.teams[activeIndex];
 
   return (
-    <section className="py-16 lg:py-20">
+    <section className="py-16 xl:py-20">
       <Container variant="page">
         <SectionHeading>
           <SectionHeading.Title size="display">
