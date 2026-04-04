@@ -109,3 +109,51 @@ export interface TeamShowcaseContent {
   defaultIndex: number;
   teams: TeamTab[];
 }
+
+export interface StatItem {
+  value: string;
+  label: string;
+}
+
+export interface SupportNetworkContent {
+  title: string;
+  description: string;
+  icon: ImageAsset;
+}
+
+export interface GreetingLine {
+  text: string;
+  textColor: string;
+  bgColor: string;
+}
+
+export interface LanguageCardContent {
+  title: string;
+  description: string;
+  image: ImageAsset;
+}
+
+export interface CarouselSlide {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+export interface Tweet {
+  name: string;
+  handle: string;
+  avatar: ImageAsset;
+  quote: string;
+}
+
+export interface CommunityContent {
+  heading: string;
+  description: string;
+  learnMoreHref: string;
+  avatar: ImageAsset;
+  stats: StatItem[];
+  supportNetwork: SupportNetworkContent;
+  languageCard: LanguageCardContent;
+  carouselSlides: CarouselSlide[];
+  tweets: Tweet[];
+}

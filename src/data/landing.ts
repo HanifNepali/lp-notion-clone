@@ -9,6 +9,7 @@ import type {
   TestimonialContent,
   BuildingBlocksContent,
   TeamShowcaseContent,
+  CommunityContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -465,6 +466,100 @@ export const teamShowcaseContent: TeamShowcaseContent = {
         width: 958,
         height: 599,
       },
+    },
+  ],
+};
+
+export const communityContent: CommunityContent = {
+  heading: "Join a global movement.\nUnleash your creativity.",
+  description:
+    "Our vibrant community produces content, teaches courses, and leads events all over the world.",
+  learnMoreHref: "#",
+  avatar: {
+    src: `/images/avatars/avatars.svg`,
+    alt: "",
+    width: 1024,
+    height: 160,
+  },
+  stats: [
+    { value: "1M+", label: "community members" },
+    { value: "150+", label: "community groups" },
+    { value: "50+", label: "countries represented" },
+  ],
+  supportNetwork: {
+    title: "An always-on support network",
+    description: "Swap setups and share tips in over 149 online communities.",
+    icon: {
+      src: "/icons/community-icons.svg",
+      alt: "Social Networking Apps",
+      width: 288,
+      height: 272,
+    },
+  },
+  languageCard: {
+    title: "Choose your language",
+    description:
+      "Notion currently supports English, Korean, Japanese, French, German, Spanish, and Portuguese. With more to come!",
+    image: {
+      src: "/images/meetup.png",
+      alt: "Variet of Languages Supported",
+      width: 464,
+      height: 234,
+    },
+  },
+  carouselSlides: [
+    {
+      src: "/images/community-slide-1.png",
+      alt: "Community meet-up in Tokyo",
+      caption: "Community meet-up in Tokyo",
+    },
+    {
+      src: "/images/community-slide-1.png",
+      alt: "Community meet-up in Tokyo",
+      caption: "Community meet-up in Tokyo",
+    },
+    {
+      src: "/images/community-slide-1.png",
+      alt: "Community meet-up in Tokyo",
+      caption: "Community meet-up in Tokyo",
+    },
+  ],
+  tweets: [
+    {
+      name: "André Blackman",
+      handle: "@mindofandre",
+      avatar: {
+        src: "/images/avatars/avatar-2.png",
+        alt: "",
+        width: 40,
+        height: 40,
+      },
+      quote:
+        "One of the most incredible things about @NotionHQ is the dynamic community being built - creating and sharing at its best.",
+    },
+    {
+      name: "Deborah Mecca",
+      handle: "@DebMecca",
+      avatar: {
+        src: "/images/avatars/avatar-1.png",
+        alt: "",
+        width: 40,
+        height: 40,
+      },
+      quote:
+        "I used to HATE documenting things. And then I started using @NotionHQ and I document a lot. A LOT A LOT. Now I just realize that it wasn't that I hated documenting, I just hated Google Docs.",
+    },
+    {
+      name: "Oliver Peyre",
+      handle: "@opeyre",
+      avatar: {
+        src: "/images/avatars/avatar-3.png",
+        alt: "",
+        width: 40,
+        height: 40,
+      },
+      quote:
+        "@NotionHQ Truly impressed by the velocity and quality of your work. Making using Notion even more fun week after week!",
     },
   ],
 };

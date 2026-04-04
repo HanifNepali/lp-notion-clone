@@ -65,6 +65,9 @@
 }
 
 @layer utilities {
+  .container-sm {
+    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-272;
+  }
   .container-page {
     @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-322;
   }

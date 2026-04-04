@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 
-type ContainerVariant = "page" | "xl";
+type ContainerVariant = "sm" | "page" | "xl";
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   as?: React.ElementType;
@@ -8,6 +8,7 @@ interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const variantClasses: Record<ContainerVariant, string> = {
+  sm: "container-sm",
   page: "container-page",
   xl: "container-xl",
 };

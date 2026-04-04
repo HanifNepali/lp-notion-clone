@@ -23,7 +23,7 @@ export function BuildingBlocks() {
             width={buildingBlocksContent.peekImage.width}
             height={buildingBlocksContent.peekImage.height}
             aria-hidden="true"
-            className="pointer-events-none static top-10 left-0 hidden lg:block"
+            className="pointer-events-none static hidden lg:block"
           />
           <SectionHeading className="ml-4">
             <SectionHeading.Title size="display">
@@ -61,7 +61,7 @@ export function BuildingBlocks() {
               <Card.Title className="font-bold! text-lg!">
                 {customizeInfoCard.title}
               </Card.Title>
-              <Card.Description className="max-w-md mt-1! text-base! text-ink!">
+              <Card.Description className="max-w-md mt-1! text-base! text-ink! leading-5.5!">
                 {customizeInfoCard.description}
               </Card.Description>
             </Card.Header>
@@ -84,7 +84,7 @@ export function BuildingBlocks() {
               <Card.Title className="font-bold! text-lg!">
                 {buildAnyPageCard.title}
               </Card.Title>
-              <Card.Description className="max-w-sm mt-1! text-base! text-ink!">
+              <Card.Description className="max-w-sm mt-1! text-base! text-ink! leading-5.5!">
                 {buildAnyPageCard.description}
               </Card.Description>
             </Card.Header>
