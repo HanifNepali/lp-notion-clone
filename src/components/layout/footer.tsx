@@ -30,7 +30,7 @@ export function Footer() {
                     key={item.label}
                     href={item.href}
                     aria-label={item.label}
-                    className="text-ink/50 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                    className="text-ink/70 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
                   >
                     <Image
                       src={item.icon.src}
@@ -50,9 +50,9 @@ export function Footer() {
               <div key={colIndex} className="flex sm:block">
                 {column.map((group) => (
                   <div key={group.heading} className="mb-8 flex-1">
-                    <p className="text-sm font-semibold text-ink">
+                    <h2 className="text-sm font-semibold text-ink">
                       {group.heading}
-                    </p>
+                    </h2>
                     <ul className="mt-4 ">
                       {group.links.map((link) => (
                         <li key={link.label}>

@@ -129,7 +129,7 @@ export function Community() {
                     <p className="text-sm font-semibold text-ink">
                       {tweet.name}
                     </p>
-                    <p className="text-sm text-ink/50">{tweet.handle}</p>
+                    <p className="text-sm text-ink/70">{tweet.handle}</p>
                   </div>
                 </div>
                 <p className="mt-5 text-base leading-6 text-ink lg:mb-5">

@@ -34,6 +34,7 @@ export function GetStarted() {
             alt={getStartedContent.illustration.alt}
             width={getStartedContent.illustration.width}
             height={getStartedContent.illustration.height}
+            aria-hidden="true"
             className="h-auto w-full"
           />
         </div>

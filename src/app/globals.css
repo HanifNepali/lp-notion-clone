@@ -7,7 +7,7 @@
   --color-white: #ffffff;
   --color-surface: #f6f5f4;
   --color-border: rgba(0, 0, 0, 0.1);
-  --color-accent: #0a85d1;
+  --color-accent: #097bc2;
 
   /* Font family — set via next/font in layout.tsx, exposed here as a variable */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;

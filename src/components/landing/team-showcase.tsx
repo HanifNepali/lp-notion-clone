@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -12,6 +12,22 @@ export function TeamShowcase() {
     teamShowcaseContent.defaultIndex,
   );
   const activeTeam = teamShowcaseContent.teams[activeIndex];
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  function handleKeyDown(event: React.KeyboardEvent, index: number) {
+    const count = teamShowcaseContent.teams.length;
+    let nextIndex: number | null = null;
+    if (event.key === "ArrowRight") nextIndex = (index + 1) % count;
+    else if (event.key === "ArrowLeft") nextIndex = (index - 1 + count) % count;
+    else if (event.key === "Home") nextIndex = 0;
+    else if (event.key === "End") nextIndex = count - 1;
+
+    if (nextIndex !== null) {
+      event.preventDefault();
+      setActiveIndex(nextIndex);
+      tabRefs.current[nextIndex]?.focus();
+    }
+  }
 
   return (
     <section className="py-16 xl:py-20">
@@ -32,10 +48,17 @@ export function TeamShowcase() {
             return (
               <button
                 key={team.label}
+                ref={(el) => {
+                  tabRefs.current[index] = el;
+                }}
                 type="button"
                 role="tab"
+                id={`team-tab-${index}`}
+                aria-controls="team-panel"
                 aria-selected={isActive}
+                tabIndex={isActive ? 0 : -1}
                 onClick={() => setActiveIndex(index)}
+                onKeyDown={(e) => handleKeyDown(e, index)}
                 className={cn(
                   "flex flex-col items-center gap-3 cursor-pointer rounded-xl border p-6 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink",
                   isActive
@@ -58,7 +81,12 @@ export function TeamShowcase() {
           })}
         </div>
 
-        <div className="mt-8 overflow-hidden rounded-xl border border-black/10 bg-white shadow-showcase lg:mt-10">
+        <div
+          id="team-panel"
+          role="tabpanel"
+          aria-labelledby={`team-tab-${activeIndex}`}
+          className="mt-8 overflow-hidden rounded-xl border border-black/10 bg-white shadow-showcase lg:mt-10"
+        >
           <Image
             key={activeTeam.screenshot.src + activeTeam.label}
             src={activeTeam.screenshot.src}

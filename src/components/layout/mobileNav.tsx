@@ -22,9 +22,11 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
   const drawerId = useId();
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const drawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -32,16 +34,47 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
 
   useEffect(() => {
     if (!open) return;
+
     closeButtonRef.current?.focus();
+
+    function getFocusable(): HTMLElement[] {
+      if (!drawerRef.current) return [];
+
+      return Array.from(
+        drawerRef.current.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      );
+    }
 
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") {
         setOpen(false);
         triggerRef.current?.focus();
+        return;
+      }
+
+      // focus trap within the drawer nav
+      if (e.key === "Tab") {
+        const focusable = getFocusable();
+
+        if (focusable.length === 0) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     }
 
     document.addEventListener("keydown", handleKeyDown);
+
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [open]);
 
@@ -88,6 +121,7 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
             />
             <motion.div
               id={drawerId}
+              ref={drawerRef}
               role="dialog"
               aria-modal="true"
               aria-label="Menu"
@@ -129,7 +163,7 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
 
               <nav
                 aria-label="Mobile"
-                className="flex flex-1 flex-col overflow-y-auto px-4"
+                className="flex flex-1 flex-col px-4 border-t border-border"
               >
                 <ul className="flex flex-col gap-1">
                   {navLinks.map((link) => {
@@ -158,7 +192,7 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
                           onClick={() =>
                             setExpandedLabel(isExpanded ? null : link.label)
                           }
-                          className="flex w-full items-center justify-between rounded-md px-3 py-3 text-[17px] font-medium text-ink hover:bg-black/4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+                          className="flex w-full items-center justify-between rounded-md px-3 py-3 text-[16px] font-medium text-ink hover:bg-black/4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
                         >
                           {link.label}
 
@@ -178,7 +212,7 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
                               animate={{ height: "auto", opacity: 1 }}
                               exit={{ height: 0, opacity: 0 }}
                               transition={{ duration: 0.2, ease: "easeOut" }}
-                              className="overflow-hidden pl-3"
+                              className="pl-3"
                             >
                               {link.dropdownItems!.map((item) => (
                                 <li key={item.label}>

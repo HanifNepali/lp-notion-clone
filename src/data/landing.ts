@@ -185,7 +185,7 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
       title: "Wikis",
       description:
         "It's hard to move fast if you can't find anything. Centralize all your knowledge in Notion.",
-      accentColor: "#ea4e43",
+      accentColor: "#e5281b",
       exploreHref: "#",
       screenshot: {
         src: "/images/engineering-wiki.png",
@@ -231,7 +231,7 @@ export const workspaceShowcaseContent: WorkspaceShowcaseContent = {
       title: "Projects",
       description:
         "Manage any type of project more efficiently. No separate, clunky system.",
-      accentColor: "#0a85d1",
+      accentColor: "#097bc2",
       exploreHref: "#",
       screenshot: {
         src: "/images/projects-board.png",
