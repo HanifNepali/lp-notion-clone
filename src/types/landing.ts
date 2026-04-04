@@ -183,3 +183,25 @@ export interface GetStartedContent {
   secondaryCta: CtaLink;
   illustration: ImageAsset;
 }
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
+export interface FooterLinkGroup {
+  heading: string;
+  links: FooterLink[];
+}
+
+export interface SocialLink {
+  label: string;
+  href: string;
+  icon: ImageAsset;
+}
+
+export interface FooterContent {
+  social: SocialLink[];
+  columns: FooterLinkGroup[][];
+  copyright: string;
+}

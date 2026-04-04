@@ -8,6 +8,7 @@ import { SidekickShowcase } from "@/components/landing/sidekick-showcase";
 import { TeamShowcase } from "@/components/landing/team-showcase";
 import { Templates } from "@/components/landing/templates";
 import { WorkspaceShowcase } from "@/components/landing/workspace-showcase";
+import { Footer } from "@/components/layout/footer";
 
 export default function LandingPage() {
   return (
@@ -22,6 +23,7 @@ export default function LandingPage() {
       <Community />
       <Templates />
       <GetStarted />
+      <Footer />
     </main>
   );
 }

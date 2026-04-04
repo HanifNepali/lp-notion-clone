@@ -12,6 +12,7 @@ import type {
   CommunityContent,
   TemplatesContent,
   GetStartedContent,
+  FooterContent,
 } from "@/types/landing";
 
 export const primaryNavLinks: NavLink[] = [
@@ -650,4 +651,131 @@ export const getStartedContent: GetStartedContent = {
     width: 700,
     height: 400,
   },
+};
+
+export const footerContent: FooterContent = {
+  social: [
+    {
+      label: "Instagram",
+      href: "#",
+      icon: {
+        src: "/icons/instagram.svg",
+        alt: "Instrgram Logo",
+        width: 18,
+        height: 18,
+      },
+    },
+    {
+      label: "X",
+      href: "#",
+      icon: {
+        src: "/icons/x.svg",
+        alt: "X Logo",
+        width: 18,
+        height: 18,
+      },
+    },
+    {
+      label: "Linkedin",
+      href: "#",
+      icon: {
+        src: "/icons/linkedin.svg",
+        alt: "Linkedin Logo",
+        width: 19.3,
+        height: 18,
+      },
+    },
+    {
+      label: "Facebook",
+      href: "#",
+      icon: {
+        src: "/icons/facebook.svg",
+        alt: "Facebook Logo",
+        width: 18,
+        height: 18,
+      },
+    },
+  ],
+  columns: [
+    [
+      {
+        heading: "Product",
+        links: [
+          { label: "Wikis", href: "#" },
+          { label: "Projects", href: "#" },
+          { label: "Docs", href: "#" },
+          { label: "Notion AI", href: "#" },
+          { label: "What's new", href: "#" },
+        ],
+      },
+      {
+        heading: "Solutions",
+        links: [
+          { label: "Enterprise", href: "#" },
+          { label: "Small business", href: "#" },
+          { label: "Personal use", href: "#" },
+          { label: "Startups", href: "#" },
+          { label: "Education", href: "#" },
+          { label: "Product", href: "#" },
+          { label: "Design", href: "#" },
+          { label: "Managers", href: "#" },
+        ],
+      },
+    ],
+    [
+      {
+        heading: "Download",
+        links: [
+          { label: "iOS", href: "#" },
+          { label: "Android", href: "#" },
+          { label: "Mac", href: "#" },
+          { label: "Windows", href: "#" },
+          { label: "Web Clipper", href: "#" },
+        ],
+      },
+      {
+        heading: "Build",
+        links: [
+          { label: "API docs", href: "#" },
+          { label: "Templates", href: "#" },
+          { label: "Guides", href: "#" },
+          { label: "Tutorials", href: "#" },
+        ],
+      },
+      {
+        heading: "Learn",
+        links: [
+          { label: "Customer stories", href: "#" },
+          { label: "Help center", href: "#" },
+          { label: "Webinars", href: "#" },
+          { label: "Blog", href: "#" },
+          { label: "Community", href: "#" },
+        ],
+      },
+    ],
+    [
+      {
+        heading: "Get started",
+        links: [
+          { label: "Request a demo", href: "#" },
+          { label: "Switch from Evernote", href: "#" },
+          { label: "Sign up", href: "#" },
+          { label: "Log in", href: "#" },
+        ],
+      },
+      {
+        heading: "Resources",
+        links: [
+          { label: "Pricing", href: "#" },
+          { label: "About us", href: "#" },
+          { label: "Careers", href: "#" },
+          { label: "Media kit", href: "#" },
+          { label: "Contact support", href: "#" },
+          { label: "Security", href: "#" },
+          { label: "Terms & privacy", href: "#" },
+        ],
+      },
+    ],
+  ],
+  copyright: "© 2026 Notion Labs, Inc.",
 };

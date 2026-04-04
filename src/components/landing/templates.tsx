@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/cn";
 import { templatesContent } from "@/data/landing";
 import type { TemplateItem } from "@/types/landing";
 
