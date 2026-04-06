@@ -2,6 +2,7 @@ import { projectContent } from "@/data/project";
 import { ProjectSection } from "../ui/project-section";
 import Image from "next/image";
 import { getStartedContent } from "@/data/landing";
+import { Reveal } from "../ui/reveal";
 
 function BadgeTitle({ children }: React.HTMLAttributes<HTMLDivElement>) {
   return (
@@ -44,14 +45,16 @@ export function ResponsiveApproach() {
           </ProjectSection.Content>
         </div>
         <div className="flex items-center max-w-110 mx-auto lg-mx-0">
-          <Image
-            src={getStartedContent.illustration.src}
-            alt={getStartedContent.illustration.alt}
-            width={getStartedContent.illustration.width}
-            height={getStartedContent.illustration.height}
-            aria-hidden="true"
-            className="h-auto w-full"
-          />
+          <Reveal x={-40} delay={0.15}>
+            <Image
+              src={getStartedContent.illustration.src}
+              alt={getStartedContent.illustration.alt}
+              width={getStartedContent.illustration.width}
+              height={getStartedContent.illustration.height}
+              aria-hidden="true"
+              className="h-auto w-full"
+            />
+          </Reveal>
         </div>
       </div>
     </ProjectSection>

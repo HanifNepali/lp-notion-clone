@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
 import type { ViewTab } from "@/types/landing";
+import { AnimatePresence, useReducedMotion, motion } from "motion/react";
 
 interface ViewSwitcherProps {
   tabs: ViewTab[];
@@ -13,6 +14,7 @@ export function ViewSwitcher({ tabs }: ViewSwitcherProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const activeTab = tabs[activeIndex];
+  const shouldReduceMotion = useReducedMotion();
 
   function handleKeyDown(event: React.KeyboardEvent, index: number) {
     let nextIndex: number | null = null;
@@ -38,15 +40,26 @@ export function ViewSwitcher({ tabs }: ViewSwitcherProps) {
         style={{ maxWidth: `${activeTab.screenshot.width}px` }}
         className="w-full mx-auto overflow-hidden rounded-xl border border-black/10 shadow-showcase"
       >
-        <Image
-          key={activeTab.screenshot.src}
-          src={activeTab.screenshot.src}
-          alt={activeTab.screenshot.alt}
-          width={activeTab.screenshot.width}
-          height={activeTab.screenshot.height}
-          className="h-auto"
-        />
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={activeTab.screenshot.src}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={shouldReduceMotion ? undefined : { opacity: 0, y: -12 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+          >
+            <Image
+              key={activeTab.screenshot.src}
+              src={activeTab.screenshot.src}
+              alt={activeTab.screenshot.alt}
+              width={activeTab.screenshot.width}
+              height={activeTab.screenshot.height}
+              className="h-auto"
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
+
       <div
         role="tablist"
         aria-label="Notion view types"

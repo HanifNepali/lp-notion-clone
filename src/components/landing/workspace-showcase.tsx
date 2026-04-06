@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { workspaceShowcaseContent } from "@/data/landing";
+import { Reveal } from "@/components/ui/reveal";
 
 export function WorkspaceShowcase() {
   return (
@@ -46,7 +47,11 @@ export function WorkspaceShowcase() {
                   Explore <span aria-hidden="true">→</span>
                 </a>
 
-                <div className="pointer-events-none absolute -bottom-10 left-20 hidden w-50 overflow-hidden rounded-2xl lg:block">
+                <Reveal
+                  x={-30}
+                  delay={0.15}
+                  className="pointer-events-none absolute -bottom-10 left-20 hidden w-50 lg:block"
+                >
                   <Image
                     src={block.illustration.src}
                     alt={block.illustration.alt}
@@ -55,7 +60,7 @@ export function WorkspaceShowcase() {
                     aria-hidden="true"
                     className="h-auto w-full"
                   />
-                </div>
+                </Reveal>
               </div>
 
               <div className="relative flex-1">

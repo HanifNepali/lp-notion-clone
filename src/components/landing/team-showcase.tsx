@@ -6,6 +6,7 @@ import { Container } from "@/components/layout/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { cn } from "@/lib/cn";
 import { teamShowcaseContent } from "@/data/landing";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
 export function TeamShowcase() {
   const [activeIndex, setActiveIndex] = useState(
@@ -13,6 +14,7 @@ export function TeamShowcase() {
   );
   const activeTeam = teamShowcaseContent.teams[activeIndex];
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const shouldReduceMotion = useReducedMotion();
 
   function handleKeyDown(event: React.KeyboardEvent, index: number) {
     const count = teamShowcaseContent.teams.length;
@@ -87,14 +89,24 @@ export function TeamShowcase() {
           aria-labelledby={`team-tab-${activeIndex}`}
           className="mt-8 overflow-hidden rounded-xl border border-black/10 bg-white shadow-showcase lg:mt-10"
         >
-          <Image
-            key={activeTeam.screenshot.src + activeTeam.label}
-            src={activeTeam.screenshot.src}
-            alt={activeTeam.screenshot.alt}
-            width={activeTeam.screenshot.width}
-            height={activeTeam.screenshot.height}
-            className="h-auto w-full"
-          />
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={activeTeam.screenshot.src}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={shouldReduceMotion ? undefined : { opacity: 0, y: -12 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+            >
+              <Image
+                key={activeTeam.screenshot.src + activeTeam.label}
+                src={activeTeam.screenshot.src}
+                alt={activeTeam.screenshot.alt}
+                width={activeTeam.screenshot.width}
+                height={activeTeam.screenshot.height}
+                className="h-auto w-full"
+              />
+            </motion.div>
+          </AnimatePresence>
         </div>
       </Container>
     </section>

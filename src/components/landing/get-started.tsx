@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import { getStartedContent } from "@/data/landing";
+import { Reveal } from "../ui/reveal";
 
 export function GetStarted() {
   return (
@@ -29,14 +30,16 @@ export function GetStarted() {
         </div>
 
         <div className="mt-8 w-full max-w-2xl">
-          <Image
-            src={getStartedContent.illustration.src}
-            alt={getStartedContent.illustration.alt}
-            width={getStartedContent.illustration.width}
-            height={getStartedContent.illustration.height}
-            aria-hidden="true"
-            className="h-auto w-full"
-          />
+          <Reveal y={60} delay={0.15}>
+            <Image
+              src={getStartedContent.illustration.src}
+              alt={getStartedContent.illustration.alt}
+              width={getStartedContent.illustration.width}
+              height={getStartedContent.illustration.height}
+              aria-hidden="true"
+              className="h-auto w-full"
+            />
+          </Reveal>
         </div>
       </Container>
     </section>

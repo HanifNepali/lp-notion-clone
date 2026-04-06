@@ -6,6 +6,7 @@ import { CommunityCarousel } from "@/components/landing/community-carousel";
 import { cn } from "@/lib/cn";
 import { communityContent } from "@/data/landing";
 import { Card } from "../ui/card";
+import { Reveal } from "../ui/reveal";
 
 function highlightMentions(text: string) {
   return text.split(/(@\w+)/g).map((part, i) =>
@@ -42,13 +43,15 @@ export function Community() {
         </SectionHeading>
 
         <div className="mt-8">
-          <Image
-            src={communityContent.avatar.src}
-            alt={communityContent.avatar.alt}
-            width={communityContent.avatar.width}
-            height={communityContent.avatar.height}
-            className="h-full w-full object-cover"
-          />
+          <Reveal y={60} delay={0.25}>
+            <Image
+              src={communityContent.avatar.src}
+              alt={communityContent.avatar.alt}
+              width={communityContent.avatar.width}
+              height={communityContent.avatar.height}
+              className="h-full w-full object-cover"
+            />
+          </Reveal>
         </div>
 
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">

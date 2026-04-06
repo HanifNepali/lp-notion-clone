@@ -2,6 +2,7 @@ import { projectContent } from "@/data/project";
 import { ProjectSection } from "@/components/ui/project-section";
 import { heroContent } from "@/data/landing";
 import Image from "next/image";
+import { Reveal } from "../ui/reveal";
 
 export function ProjectOverview() {
   return (
@@ -19,14 +20,16 @@ export function ProjectOverview() {
           </ProjectSection.Description>
         </div>
         <div className="w-full max-w-110 mx-auto lg:max-w-125 lg-mx-0 flex items-center">
-          <Image
-            src={heroContent.image.src}
-            alt={heroContent.image.alt}
-            width={heroContent.image.width}
-            height={heroContent.image.height}
-            className="h-auto w-full rounded-xl"
-            priority
-          />
+          <Reveal y={40} delay={0.15}>
+            <Image
+              src={heroContent.image.src}
+              alt={heroContent.image.alt}
+              width={heroContent.image.width}
+              height={heroContent.image.height}
+              className="h-auto w-full rounded-xl"
+              priority
+            />
+          </Reveal>
         </div>
       </div>
     </ProjectSection>
