@@ -23,7 +23,7 @@ export function WorkspaceShowcase() {
                 <div className="flex items-center justify-center lg:justify-normal gap-3.5">
                   <Image
                     src={block.icon}
-                    alt=""
+                    alt="Icon"
                     width={31}
                     height={31}
                     aria-hidden="true"
@@ -62,7 +62,7 @@ export function WorkspaceShowcase() {
                 {block.doodle && (
                   <Image
                     src={block.doodle}
-                    alt=""
+                    alt="Icon"
                     width={225}
                     height={50}
                     aria-hidden="true"

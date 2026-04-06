@@ -72,8 +72,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-2 text-center lg:text-left">
-          <p className="text-sm text-ink/70">{footerContent.copyright}</p>
+        <div className="text-center mt-6 max-w-4xl mx-auto">
+          <p className="text-sm text-ink/70 ">{footerContent.disclaimer}</p>
         </div>
       </Container>
     </footer>

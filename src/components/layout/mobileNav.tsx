@@ -198,7 +198,7 @@ export function MobileNav({ navLinks, actions }: MobileNavProps) {
 
                           <Image
                             src="/icons/nav-caret.svg"
-                            alt=""
+                            alt="Nav Caret Icon"
                             width={8}
                             height={6}
                             aria-hidden="true"

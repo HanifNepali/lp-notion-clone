@@ -399,7 +399,7 @@ export const teamShowcaseContent: TeamShowcaseContent = {
       label: "Engineering",
       icon: {
         src: "/icons/team-engineering.svg",
-        alt: "",
+        alt: "Icon for Engineering Team",
         width: 70,
         height: 70,
       },
@@ -412,7 +412,12 @@ export const teamShowcaseContent: TeamShowcaseContent = {
     },
     {
       label: "Design",
-      icon: { src: "/icons/team-design.svg", alt: "", width: 70, height: 70 },
+      icon: {
+        src: "/icons/team-design.svg",
+        alt: "Icon for Design Team",
+        width: 70,
+        height: 70,
+      },
       screenshot: {
         src: "/images/meeting-notes.png",
         alt: "Timeline view in Notion",
@@ -422,7 +427,12 @@ export const teamShowcaseContent: TeamShowcaseContent = {
     },
     {
       label: "Product",
-      icon: { src: "/icons/team-product.svg", alt: "", width: 70, height: 70 },
+      icon: {
+        src: "/icons/team-product.svg",
+        alt: "Icon for Product Team",
+        width: 70,
+        height: 70,
+      },
       screenshot: {
         src: "/images/team-product-page.png",
         alt: "Kanban board view in Notion",
@@ -434,7 +444,7 @@ export const teamShowcaseContent: TeamShowcaseContent = {
       label: "Marketing",
       icon: {
         src: "/icons/team-marketing.svg",
-        alt: "",
+        alt: "Icon for Marketing Team",
         width: 70,
         height: 70,
       },
@@ -449,7 +459,7 @@ export const teamShowcaseContent: TeamShowcaseContent = {
       label: "Operations",
       icon: {
         src: "/icons/team-operations.svg",
-        alt: "",
+        alt: "Icon for Operations Team",
         width: 70,
         height: 70,
       },
@@ -462,7 +472,12 @@ export const teamShowcaseContent: TeamShowcaseContent = {
     },
     {
       label: "HR",
-      icon: { src: "/icons/team-hr.svg", alt: "", width: 70, height: 70 },
+      icon: {
+        src: "/icons/team-hr.svg",
+        alt: "Icon for HR Team",
+        width: 70,
+        height: 70,
+      },
       screenshot: {
         src: "/images/meeting-notes.png",
         alt: "Timeline view in Notion",
@@ -480,7 +495,7 @@ export const communityContent: CommunityContent = {
   learnMoreHref: "#",
   avatar: {
     src: `/images/avatars/avatars.svg`,
-    alt: "",
+    alt: "Avatar Image",
     width: 1024,
     height: 160,
   },
@@ -777,5 +792,7 @@ export const footerContent: FooterContent = {
       },
     ],
   ],
-  copyright: "© 2026 Notion Labs, Inc.",
+  copyright: "© 2026 Notion Clone, Inc.",
+  disclaimer:
+    'This project is an unofficial, non-commercial recreation built as part of a Portoflio Project. It is not affiliated with, endorsed by, or sponsored by Notion Labs, Inc. "Notion" and related trademarks belong to their respective owners.',
 };

@@ -120,7 +120,7 @@ export function Community() {
                 <div className="flex items-center gap-3">
                   <Image
                     src={tweet.avatar.src}
-                    alt=""
+                    alt={tweet.avatar.alt}
                     width={tweet.avatar.width}
                     height={tweet.avatar.height}
                     className="size-10 rounded-full object-cover"

@@ -8,11 +8,15 @@ import { SidekickShowcase } from "@/components/landing/sidekick-showcase";
 import { TeamShowcase } from "@/components/landing/team-showcase";
 import { Templates } from "@/components/landing/templates";
 import { WorkspaceShowcase } from "@/components/landing/workspace-showcase";
+import { DisclaimerBanner } from "@/components/layout/disclaimer-banner";
 import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
 
 export default function LandingPage() {
   return (
     <main>
+      <DisclaimerBanner />
+      <Header />
       <Hero />
       <SidekickShowcase />
       <CustomerWall />

@@ -204,4 +204,5 @@ export interface FooterContent {
   social: SocialLink[];
   columns: FooterLinkGroup[][];
   copyright: string;
+  disclaimer: string;
 }

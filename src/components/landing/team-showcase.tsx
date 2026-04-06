@@ -68,7 +68,7 @@ export function TeamShowcase() {
               >
                 <Image
                   src={team.icon.src}
-                  alt=""
+                  alt={team.icon.alt}
                   width={team.icon.width}
                   height={team.icon.height}
                   aria-hidden="true"

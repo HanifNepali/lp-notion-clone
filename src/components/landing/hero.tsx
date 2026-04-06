@@ -94,7 +94,7 @@ export function Hero() {
           {heroContent.subheading}
           <Image
             src="/icons/ai-sparkle.svg"
-            alt=""
+            alt="Icon"
             width={24}
             height={23}
             aria-hidden="true"
