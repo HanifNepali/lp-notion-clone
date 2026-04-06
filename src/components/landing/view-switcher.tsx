@@ -54,6 +54,7 @@ export function ViewSwitcher({ tabs }: ViewSwitcherProps) {
               alt={activeTab.screenshot.alt}
               width={activeTab.screenshot.width}
               height={activeTab.screenshot.height}
+              sizes="(max-width: 1024px) 90vw, 800px"
               className="h-auto"
             />
           </motion.div>

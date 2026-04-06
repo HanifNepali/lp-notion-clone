@@ -16,6 +16,10 @@ export function SidekickShowcase() {
                 width={sidekickContent.desktopImage.width}
                 height={sidekickContent.desktopImage.height}
                 className="h-auto w-full"
+                sizes="(max-width: 1024px) 90vw, 800px"
+                fetchPriority="high"
+                priority={true} // Fixes: "LCP resources should not use loading=lazy" and  "fetchpriority=high should be applied"
+                loading="eager" //  Fixes: "Optimize LCP by making the image discoverable from the HTML immediately"
               />
             </div>
           </Reveal>
