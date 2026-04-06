@@ -11,6 +11,20 @@ import { WorkspaceShowcase } from "@/components/landing/workspace-showcase";
 import { DisclaimerBanner } from "@/components/layout/disclaimer-banner";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio Project - Notion Landing Page Rebuild",
+  description:
+    "An unofficial, non-commercial recreation of the Notion.com homepage, built to demonstrate a Figma-to-Next.js development workflow. Not affiliated with Notion Labs, Inc.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  alternates: {
+    canonical: "/landing",
+  },
+};
 
 export default function LandingPage() {
   return (
