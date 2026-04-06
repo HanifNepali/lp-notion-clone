@@ -696,7 +696,7 @@ export const footerContent: FooterContent = {
       icon: {
         src: "/icons/linkedin.svg",
         alt: "Linkedin Logo",
-        width: 19.3,
+        width: 20,
         height: 18,
       },
     },
