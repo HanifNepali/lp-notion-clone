@@ -280,13 +280,13 @@ export const consolidateToolsContent: ConsolidateToolsContent = {
   },
   strikethrough: {
     src: "/images/tools-strikethrough.png",
-    alt: "",
+    alt: "A strike through line",
     width: 613,
     height: 50,
   },
   pencilIllustration: {
     src: "/images/giant-pencil-illustration.png",
-    alt: "",
+    alt: "Illustration Art",
     width: 217,
     height: 183,
   },

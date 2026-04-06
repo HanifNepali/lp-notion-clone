@@ -13,7 +13,7 @@ export function ProjectCta() {
           {projectContent.finalCta.description}
         </ProjectSection.Description>
         <ProjectSection.Content>
-          <div className="mt-4">
+          <div className="mt-2">
             <Button
               href={projectContent.finalCta.cta.href}
               variant="primary"
