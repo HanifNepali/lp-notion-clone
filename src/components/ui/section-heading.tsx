@@ -19,7 +19,7 @@ function Title({ size = "subheading", className, children }: TitleProps) {
   const sizeClasses =
     size === "display"
       ? "text-[32px] font-bold leading-9 tracking-[-0.8px] sm:text-[45px] sm:leading-[49px] sm:tracking-[-1.2px]"
-      : "text-(length:--text-h2) font-medium leading-(--text-h2--line-height) tracking-(--text-h2--letter-spacing)";
+      : "text-(length:--text-display) font-medium leading-(--text-display--line-height) tracking-(--text-display--letter-spacing)";
   return <h2 className={cn(sizeClasses, "text-ink", className)}>{children}</h2>;
 }
 

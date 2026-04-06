@@ -90,7 +90,7 @@ export function Hero() {
           </div>
         </h1>
 
-        <p className="mt-8 max-w-130 text-lg font-medium leading-8 tracking-[-0.3px] text-ink lg:text-(length:--text-h2) lg:leading-(--text-h2--line-height) lg:tracking-(--text-h2--letter-spacing)">
+        <p className="mt-8 max-w-130 text-lg font-medium leading-8 tracking-[-0.3px] text-ink lg:text-(length:--text-display) lg:leading-(--text-display--line-height) lg:tracking-(--text-display--letter-spacing)">
           {heroContent.subheading}
           <Image
             src="/icons/ai-sparkle.svg"

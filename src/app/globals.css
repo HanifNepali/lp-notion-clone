@@ -18,9 +18,9 @@
   --text-hero--line-height: 78px;
   --text-hero--letter-spacing: -2.5628px;
 
-  --text-h2: 24px;
-  --text-h2--line-height: 30px;
-  --text-h2--letter-spacing: -0.42px;
+  --text-display: 24px;
+  --text-display--line-height: 30px;
+  --text-display--letter-spacing: -0.42px;
 
   --text-nav: 15px;
   --text-nav--line-height: 31px;
@@ -30,7 +30,7 @@
   --text-quote: 29px;
   --text-quote--line-height: 34px;
 
-  --text-caption: 13.5px;
+  --text-caption: 14px;
   --text-caption--line-height: 19px;
 
   /* Radius */
@@ -65,14 +65,17 @@
 }
 
 @layer utilities {
+  .container-base {
+    @apply mx-auto w-full px-4 sm:px-6 lg:px-8;
+  }
   .container-sm {
-    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-272;
+    @apply max-w-272;
   }
   .container-page {
-    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-322;
+    @apply max-w-322;
   }
   .container-xl {
-    @apply mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-360;
+    @apply max-w-360;
   }
   /* Layered "product screenshot" shadow — used throughout the landing page
       wherever a screenshot/card floats above the background. */

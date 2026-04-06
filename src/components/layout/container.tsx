@@ -8,9 +8,9 @@ interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const variantClasses: Record<ContainerVariant, string> = {
-  sm: "container-sm",
-  page: "container-page",
-  xl: "container-xl",
+  sm: "container-base container-sm",
+  page: "container-base container-page",
+  xl: "container-base container-xl",
 };
 
 export function Container({
