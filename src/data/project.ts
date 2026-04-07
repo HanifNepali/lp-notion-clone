@@ -34,7 +34,7 @@ export const projectContent: ProjectContent = {
       {
         name: "Motion",
         description:
-          "Powers the mobile drawer, dropdown menus, and the swipeable community carousel.",
+          "Powers the mobile drawer, dropdown menus, the swipeable community carousel and section level decorative elements",
       },
       {
         name: "lucide-react",
