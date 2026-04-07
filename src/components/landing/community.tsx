@@ -3,7 +3,6 @@ import { Container } from "@/components/layout/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { CommunityCarousel } from "@/components/landing/community-carousel";
-import { cn } from "@/lib/cn";
 import { communityContent } from "@/data/landing";
 import { Card } from "../ui/card";
 import { Reveal } from "../ui/reveal";

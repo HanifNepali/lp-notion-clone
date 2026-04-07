@@ -1,25 +1,8 @@
 import Image from "next/image";
-import {
-  Flag,
-  CheckCircle2,
-  ClipboardList,
-  Plane,
-  CalendarDays,
-  PartyPopper,
-} from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import { templatesContent } from "@/data/landing";
 import type { TemplateItem } from "@/types/landing";
-
-const iconMap = {
-  flag: Flag,
-  check: CheckCircle2,
-  clipboard: ClipboardList,
-  plane: Plane,
-  calendar: CalendarDays,
-  party: PartyPopper,
-};
 
 function TemplateCard({ item }: { item: TemplateItem }) {
   return (

@@ -1,4 +1,3 @@
-import { Container } from "@/components/layout/container";
 import { projectContent } from "@/data/project";
 import { ProjectSection } from "../ui/project-section";
 

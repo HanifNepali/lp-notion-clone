@@ -384,13 +384,6 @@ export const matchgroupTestimonial: TestimonialContent = {
   },
 };
 
-const productRoadmapScreenshot = {
-  src: "/images/team-product-page.png",
-  alt: "A product roadmap page in Notion with a sidebar showing team spaces",
-  width: 958,
-  height: 640,
-};
-
 export const teamShowcaseContent: TeamShowcaseContent = {
   heading: "Every team, side-by-side",
   defaultIndex: 2,
