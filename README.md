@@ -1,6 +1,9 @@
 # Figma to Next.js — Notion Landing Page Rebuild
 
-> ⚠️ **Unofficial, non-commercial clone.** This project recreates the visual design of Notion's public homepage for portfolio project purposes. It is not affiliated with, endorsed by, or sponsored by Notion Labs, Inc. "Notion" and related trademarks belong to their respective owners.
+**Live demo:** [Homepage](https://lp-notion-clone.vercel.app/),
+[Landing Page](https://lp-notion-clone.vercel.app/landing)
+
+> **Unofficial, non-commercial clone.** This project recreates the visual design of Notion's public homepage for portfolio project purposes. It is not affiliated with, endorsed by, or sponsored by Notion Labs, Inc. "Notion" and related trademarks belong to their respective owners.
 
 ## 1. Project Overview
 
@@ -11,10 +14,9 @@ A portfolio project: the Notion homepage rebuilt as a landing page, built sectio
 ## 2. Features
 
 - Distinct landing-page sections: hero, feature showcases, testimonials, an interactive view-switcher, a team tab-switcher, a community carousel etc.
-- Mobile-first responsive layout throughout, not a shrunk-down desktop design
+- Mobile-first responsive layout throughout
 - Interactive elements: mobile drawer nav, desktop dropdown menus, click-to-swap view/team tabs (keyboard arrow-key navigable), a swipeable community carousel
 - Scroll-triggered and click-triggered animations via Motion, applied selectively
-- Full `prefers-reduced-motion` support at the animation-engine level (`MotionConfig`), not just CSS overrides
 - WCAG 2.2 AA-targeted accessibility, audited and corrected for contrast, keyboard operability, and ARIA correctness
 
 ## 3. Tech Stack

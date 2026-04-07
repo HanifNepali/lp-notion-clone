@@ -787,5 +787,5 @@ export const footerContent: FooterContent = {
   ],
   copyright: "© 2026 Notion Clone, Inc.",
   disclaimer:
-    'This project is an unofficial, non-commercial recreation built as part of a Portoflio Project. It is not affiliated with, endorsed by, or sponsored by Notion Labs, Inc. "Notion" and related trademarks belong to their respective owners.',
+    'This project is an unofficial, non-commercial recreation built as part of a Portfolio Project. It is not affiliated with, endorsed by, or sponsored by Notion Labs, Inc. "Notion" and related trademarks belong to their respective owners.',
 };
