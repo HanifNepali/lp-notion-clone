@@ -82,6 +82,7 @@ export function WorkspaceShowcase() {
                     width={block.screenshot.width}
                     height={block.screenshot.height}
                     className="h-auto w-full"
+                    sizes="(min-width: 1024px) 700px, 100vw"
                   />
                 </div>
               </div>

@@ -120,7 +120,7 @@ export function Hero() {
               alt={heroContent.image.alt}
               width={heroContent.image.width}
               height={heroContent.image.height}
-              sizes="(max-width: 768px) 100vw, 400px"
+              sizes="(min-width: 1024px) 852px, 100vw"
               className="h-auto w-full rounded-xl"
               priority
             />

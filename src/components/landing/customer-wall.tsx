@@ -34,6 +34,7 @@ export function CustomerWall() {
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
+                sizes="140px"
                 className="h-6 w-auto object-contain sm:h-7"
               />
             </div>

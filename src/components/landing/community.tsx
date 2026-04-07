@@ -48,6 +48,7 @@ export function Community() {
               alt={communityContent.avatar.alt}
               width={communityContent.avatar.width}
               height={communityContent.avatar.height}
+              sizes="(min-width: 1024px) 1024px, 100vw"
               className="h-full w-full object-cover"
             />
           </Reveal>
@@ -81,6 +82,7 @@ export function Community() {
                 alt={communityContent.supportNetwork.icon.alt}
                 width={communityContent.supportNetwork.icon.width}
                 height={communityContent.supportNetwork.icon.height}
+                sizes="(min-width: 1024px) 288px, 100vw"
                 className="object-cover w-auto"
               />
             </Card.Media>
@@ -102,6 +104,7 @@ export function Community() {
                 alt={communityContent.languageCard.image.alt}
                 width={communityContent.languageCard.image.width}
                 height={communityContent.languageCard.image.height}
+                sizes="(min-width: 1024px) 464px, 100vw"
                 className="object-cover w-auto"
               />
             </Card.Media>

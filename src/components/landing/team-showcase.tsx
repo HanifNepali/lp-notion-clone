@@ -103,6 +103,7 @@ export function TeamShowcase() {
                 alt={activeTeam.screenshot.alt}
                 width={activeTeam.screenshot.width}
                 height={activeTeam.screenshot.height}
+                sizes="(min-width: 1024px) 958px, 100vw"
                 className="h-auto w-full"
               />
             </motion.div>

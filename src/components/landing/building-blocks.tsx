@@ -71,6 +71,7 @@ export function BuildingBlocks() {
                 alt={customizeInfoCard.image.alt}
                 width={customizeInfoCard.image.width}
                 height={customizeInfoCard.image.height}
+                sizes="(min-width: 1024px) 480px, 100vw"
                 className="h-auto w-full"
               />
             </Card.Media>
@@ -94,6 +95,7 @@ export function BuildingBlocks() {
                 alt={buildAnyPageCard.image.alt}
                 width={buildAnyPageCard.image.width}
                 height={buildAnyPageCard.image.height}
+                sizes="(min-width: 1024px) 480px, 100vw"
                 className="h-auto w-full"
               />
             </Card.Media>

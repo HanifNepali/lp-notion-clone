@@ -89,7 +89,7 @@ export const heroContent: HeroContent = {
   ],
   subheading:
     "Notion is the connected workspace where better, faster work happens. Now with AI",
-  cta: { label: "Get Notion free", href: "/signup" },
+  cta: { label: "Get Notion free", href: "#" },
   image: {
     src: "/images/home-hero.png",
     alt: "Notion workspace showing a wiki, docs, and project board",
@@ -651,7 +651,7 @@ export const templatesContent: TemplatesContent = {
 export const getStartedContent: GetStartedContent = {
   heading: "Get started for free",
   description: "Play around with it first. Pay and add your team later.",
-  primaryCta: { label: "Try Notion free", href: "/signup" },
+  primaryCta: { label: "Try Notion free", href: "/signupp" },
   secondaryCta: { label: "Request a demo", href: "#" },
   illustration: {
     src: "/images/notion-parade.png",
